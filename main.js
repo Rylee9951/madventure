@@ -2,14 +2,25 @@ var parentMorning = confirm("Do you think you would be a good parent of a 2 year
 if (parentMorning === true) {
 	var confirmMessage = confirm("Did you wake up on the right side of the bed?")
 	if (confirmMessage === true) {
-		var confirmMessage = prompt("How do you prepare eggs for a 2 year old, scrambled eggs, eggs over easy, or both?")
+		var confirmMessage = prompt("How do you prepare eggs for a 2 year old, scrambled eggs, eggs over easy, or eggs over hard?")
 		
 		if (confirmMessage === 'eggs over easy') {
              alert("Hopefully you have no kids cuz he/she would be dead")
 		}
 		
-		else if (confirmMessage === 'both') {
-            alert("You are half right but raw yolk will not be good for your child")
+		else if (confirmMessage === 'eggs over hard') {
+            var confirmMessage = confirm ("Not to bad, Can you lose you child in the matter of seconds if you take your eyes off of them? ")
+            if (confirmMessage === true){
+            	var confirmMessage = confirm("They are small and fast a second is a long time, Do you think a 2 year old knows what no means?")
+            	if (confirmMessage === true){
+                    var confirmMessage= alert("You win!!! They absolutly know they may pretend but they know")
+            	}else {
+            		alert("Sorry unless you have never said no to them they know")
+            	}
+            }
+            else {
+                 alert("Your child is gone")
+            }
 		}
 		
 		else if (confirmMessage === 'scrambled eggs') {
